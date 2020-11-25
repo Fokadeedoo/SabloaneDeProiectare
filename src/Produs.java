@@ -1,10 +1,14 @@
-public class Produs{
+public class Produs implements Elemente{
     int cantitate;
     String nume;
-    float pret;
-    public void Produs(int cantitate,String nume,float pret){
+    double pret;
+    public Produs(int cantitate,String nume,double pret){
         this.cantitate= cantitate;
         this.nume=nume;
         this.pret=pret;
+    }
+    public void print()
+    {
+        System.out.println(nume + " " + cantitate + " " + pret);
     }
 }
